@@ -1,0 +1,6 @@
+{
+  "name": "SPIDER//VERSE - Marvel Multiverse Protocol",
+  "description": "Interactive Marvel Multiverse HUD featuring Spider-Society variants, tactical battle matrices, crisis simulation engine, dimensional portals, and comic artifacts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

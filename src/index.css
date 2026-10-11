@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-headline: 'Syne', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  body {
+    background-color: #121318;
+    color: #e3e1e9;
+    font-family: var(--font-body);
+  }
+}
+
+.font-headline {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Comic ink shadow and hard bevels */
+.shadow-ink {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.shadow-ink-lg {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.shadow-ink-xl {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.shadow-neon-cyan {
+  box-shadow: 0 0 16px rgba(0, 238, 252, 0.4);
+}
+
+.shadow-neon-red {
+  box-shadow: 0 0 20px rgba(255, 82, 94, 0.5);
+}
+
+.shadow-neon-yellow {
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.45);
+}
+
+/* Halftone Pattern */
+.bg-halftone-pattern {
+  background-image: radial-gradient(rgba(0, 238, 252, 0.15) 1.5px, transparent 1.5px), radial-gradient(rgba(255, 82, 94, 0.15) 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* Glitch effects */
+@keyframes glitch-anim {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
+
+.animate-glitch {
+  animation: glitch-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121318;
+}
+::-webkit-scrollbar-thumb {
+  background: #292a2f;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff525e;
+}
